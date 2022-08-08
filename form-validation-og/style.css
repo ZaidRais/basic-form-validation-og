@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    color: #ffffff;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+  
+
+  #form {
+
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    font-size: 12px;
+    z-index: 2;
+    background: rgb(73 108 196 / 32%);
+    box-shadow: 0 8px 32px 0 rgb(30 45 255 / 37%);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+#form h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background: rgb(105 132 180 / 30%);
+    box-shadow: 0 8px 32px 0 rgb(56 57 75 / 37%);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgb(255 255 255 / 18%);
+    cursor: pointer;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+   
+    color: #ffffff; 
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    background: rgb(35 36 56 / 40%);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 2px solid rgb(69 136 140 / 33%);
+    
+}
+
+
+.input-control input:focus {
+    outline: 0 ;
+    border: 2px solid rgb(0 111 255 / 60%);
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff345d8f;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    #myVideo {
+        right: -65vw;
+        bottom: 0; 
+      }
+    }
+
+
+@media screen and (max-width: 480px) {
+    
+    #myVideo {
+        right: -115vw;
+        bottom: 0; 
+      }
+    }

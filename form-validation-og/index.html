@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form validation OG</title>
+</head>
+<body>
+    
+        <video autoplay muted loop id="myVideo">
+          <source src="./earth-video.mp4" type="video/mp4">
+          
+        </video>
+        
+        <div class="container">
+            <form  id="form" action="/">
+                <h1>Registration</h1>
+        
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" name="cpassword" id="cpassword">
+                    <div class="error"></div>
+                </div>
+                <button type="submit" > Register Me</button>
+            </form>
+           </div>
+        
+         
+      <script src="./script.js"></script>
+</body>
+
+</html>
